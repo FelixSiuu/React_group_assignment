@@ -1,0 +1,114 @@
+@import '../../App.scss';
+
+.login_container{
+  overflow: hidden;
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  align-items: center;
+}
+// form
+.form{
+  @keyframes goLeft{
+    from{
+      margin-left: 100px;
+      opacity: 1;
+    }
+    to{
+      margin-left: -400px;
+      opacity: 0;
+    }
+  }
+  margin-left: 100px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 1;
+  .password,
+  .username{
+    position: relative;
+    width: 300px;
+    height: 42px;
+    margin-bottom: 40px;
+    .input_login{
+      @include inputPublic;
+      padding-left: 10px;
+      font-size: 1rem;
+    }
+    .showPwd{
+      content: '顯示';
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      top: 1.28rem;
+      right: 0.5rem;
+      cursor: pointer;
+      line-height: 42px;
+      color: gray;
+    }
+  }
+  .submit{
+    width: 300px;
+    height: 50px;
+    .button_login{
+      @include buttonPublic;
+      font-size: 1rem;
+    }
+  }
+}
+.form_success{
+  animation: goLeft 1000ms forwards ease-in;
+}
+// tips
+.tips{
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .textTips,
+  .successTips,
+  .pwdTips{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    img{
+      width: 450px;
+      height: 300px;
+    }
+  }
+  .showTips{
+    animation: fadeIn 900ms forwards;
+  }
+  @keyframes fadeInForSuccess {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .showSuccessTips {
+    animation: fadeInForSuccess 2000ms forwards ;
+  }
+  .successTips{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    color: #222;
+  }
+}
+

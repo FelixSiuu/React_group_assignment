@@ -1,0 +1,50 @@
+/* footer */
+.footer{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background: url('../../assets/pattern_publuc.jpg');
+  .footer_container{
+    position: relative;
+    width: 1000px;
+    padding: 50px;
+    box-sizing: border-box;
+    ul{
+      display: flex;
+      li{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        span{
+          width: 100px;
+          margin: 5px 0;
+          font-size: 0.9rem;
+          color: #222;
+          font-weight: normal;
+          cursor: pointer;
+          &:hover{
+            color: var(--themeColor);
+            text-decoration: underline;          
+          }
+        }
+      }
+      .scopeIcon{
+        width: 235px;
+        height: 150px;
+        padding-top: 10px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .copyRight{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+  }
+}
