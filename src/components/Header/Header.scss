@@ -46,8 +46,10 @@
           align-items: center;
           gap: 5px;
           .name{
+            padding: 0 5px;
             color: var(--themeColor);
             font-size: 1.2rem;
+            white-space: nowrap;
           }
           button{
             @include buttonPublic;

@@ -56,12 +56,12 @@ export default function Header() {
   }
 
   // 點擊搜尋按鈕
-  const handleSearch = () => {
+  function handleSearch(){
     const filterItem = routeList.filter(item => {
       return item.title === keyWord
     })
-    if(filterItem !== []){
-      setItem(filterItem[0].children);
+    setItem(filterItem[0].children);
+    if(routeItem !== []){
       setTimeout(()=>{
         navigate('/introduction', {state: routeItem})
       },1200)
