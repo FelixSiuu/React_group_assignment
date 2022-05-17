@@ -27,7 +27,7 @@ export default function Header() {
   },[])
 
   useEffect(()=>{
-  },[isLogin])
+  },[isLogin,routeItem])
 
   useEffect(()=>{
     const newList = data.filter(item => {
@@ -61,11 +61,8 @@ export default function Header() {
       return item.title === keyWord
     })
     setItem(filterItem[0].children);
-    if(routeItem !== []){
-      setTimeout(()=>{
-        navigate('/introduction', {state: routeItem})
-      },1200)
-    }
+    navigate('/introduction', {state: routeItem})
+
   }
 
   return (
@@ -105,9 +102,7 @@ export default function Header() {
               <Link to='/home' className="header_title"></Link>
               <div className="inputBox">
                 <button className="searchButton" 
-                  onClick={()=>{
-                    handleSearch()
-                  }}
+                  onClick={handleSearch}
                 >
                   搜尋
               </button>

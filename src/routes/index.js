@@ -1,10 +1,12 @@
+import { lazy } from 'react'
 import { Navigate } from 'react-router-dom'
 import Animation from '../pages/Animation/Animation.jsx'
 import Home from '../pages/Home/Home.jsx'
 import About from '../pages/About/About.jsx'
-import Introduction from '../pages/Introduction/Introduction.jsx'
 import Login from '../pages/Login/Login.jsx'
-import Detail from '../pages/Detail/Detail.jsx'
+// lazy load
+const Introduction = lazy(()=> import('../pages/Introduction/Introduction.jsx'))
+const Detail = lazy(()=> import('../pages/Detail/Detail.jsx'))
 
 const routes = [
   { path: '/animation', element: <Animation/> },

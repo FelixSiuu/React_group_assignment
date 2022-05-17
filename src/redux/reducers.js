@@ -7,7 +7,7 @@ export default function detailReducer(preState=initState, action){
   switch(type){
     // 若動作類型為ADDONE, 則返回數據增加的值
     case GETDETAIL: return data ;
-    // 返回初始值0
+    // 返回初始值
     default: return preState
   }
 }
