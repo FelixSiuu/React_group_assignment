@@ -1,7 +1,7 @@
 import React,{ useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import textTips from '../../assets/tips/tips_text.jpg'
-import pwdTips from '../../assets/tips/tips_pwd.jpg'
+import textTips from '../../assets/tips/tips_text.png'
+import pwdTips from '../../assets/tips/tips_pwd.jpeg'
 import './Login.scss'
 
 export default function Login() {
