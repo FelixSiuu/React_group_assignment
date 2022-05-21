@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Contact from '../Contact/Contact.jsx'
 import scopeIcon from '../../assets/logo_scope.png'
 import './Footer.scss'
@@ -25,10 +24,10 @@ export default function Footer() {
             <span>私隱條款</span>
           </li>
           <li>其他服務
-            <Link to="https://www.scope.edu/">City U SCOPE</Link>
+            <a href="https://www.scope.edu/" target="_blank" rel="noreferrer">City U SCOPE</a>
           </li>
           <li>我們的技術支援
-            <a href="https://www.scope.edu/" className="scopeIcon">
+            <a href="https://www.scope.edu/" className="scopeIcon" target="_blank" rel="noreferrer"> 
               <img src={scopeIcon} alt="" />
             </a>
           </li>

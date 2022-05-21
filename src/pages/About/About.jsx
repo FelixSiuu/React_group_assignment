@@ -16,7 +16,7 @@ export default function About() {
         </div>
         <div className="aboutBox_body">
           本網站僅作學習使用，數據來源於：&nbsp;
-          <a href="https://follo3me.com/" className='dataSource'>隨我行FolloMe</a>
+          <a href="https://follo3me.com/" target="_blank" className='dataSource' rel="noreferrer">隨我行FolloMe</a>
         </div>
       </div>
     </div>

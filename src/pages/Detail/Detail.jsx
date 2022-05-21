@@ -148,7 +148,7 @@ export default connect(
                   </div>
 
                   {/* open map button */}
-                  <a href="https://www.openstreetmap.org/#map=11/22.3567/114.1363" className="button"> 打開地圖 </a>
+                  <a href="https://www.openstreetmap.org/#map=11/22.3567/114.1363" target="_blank" className="button" rel="noreferrer"> 打開地圖 </a>
                 </div>
               </>
             )
